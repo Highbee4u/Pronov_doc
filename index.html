@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" type="image/png" href="img\ProNov.png">
+        <title> ProNov Documentation </title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+         
+        <style>
+            
+        </style>
+    </head>
+    <body>
+
+        <div>
+            <div>
+                <nav class="navbar navbar-inverse" style="background-color:#4B8F4B; padding-left:5%; padding-right:5%;">
+                    <div class="navbar-header">                        
+                        
+                        <a class="navbar-brand" href="#">
+                            <img alt="ProNov Logo" src="img\ProNov.png" height="50px;" width="50px">
+                        </a>
+                    
+                            <a href="#" class="btn btn-default" role="button" style="color: white; font-size:110%" onmouseover="changedColor(this)" onmouseout="normalColor(this)"> ProNov Documentation </a>                        
+                    </div>                    
+                </nav>
+            
+                <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="padding-left:5%; padding-right:5%; border-bottom-style:solid; border-color:#E4E3E3; border-width:1px;">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button
+                    
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" id="link" href="#" style="margin-left:10px">Getting Started <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>                        
+                    </div>                    
+                </nav>
+            </div>
+
+            <div class="container-fluid">                    
+                <div class="row center-content-md-center">                    
+                        
+                    <div class="col-lg-3" style="border-right-style: solid; border-color:#E4E3E3; border-right-width: 1px; min-height: 505px;">
+
+                        <div class="container-fluid" id="menuBar"> 
+                            <div id="accordion" role="tablist" aria-multiselectable="true" style="margin-left:13%;">
+                                    
+                                <div class="card" style="margin-top:10%;">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h6 class="mb-0">
+                                            <a class="fa fa-spinner" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" small class="text-muted">
+                                                Getting Started
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h6 class="mb-0">    
+                                            <a  href="#"  onclick="load_system_req()" small class="text-muted" ><i class="fa fa-microchip" aria-hidden="true"></i> Requirements</a>
+                                        </h6>
+                                    </div>                
+                                </div>
+
+                                <div class="card">                                        
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  small class="text-muted">
+                                                <i class="fa fa-lock" aria-hidden="true"></i> Access
+                                            </a>
+                                        </h6>
+                                    </div>
+                
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            
+                                            <div class="list-group-item">
+                                                    <li class="btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                            <a href="#"  onclick="load_registration()" class="h6"> Registration </a>
+                                                    </li>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                              <a href="#"onclick="load_step1()" class="h6" ><button class="dropdown-item" type="button">Stage 1</button></a>
+                                                              <a href="#"onclick="load_step2()" class="h6" ><button class="dropdown-item" type="button">Stage 2</button></a>
+                                                              <a href="#"onclick="load_step3()" class="h6"  ><button class="dropdown-item" type="button">Stage 3</button></a>
+                                                              <a href="#"onclick="load_step4()" class="h6"  ><button class="dropdown-item" type="button">Stage 4</button></a>
+                                                            </div>
+                                                          </div>
+                                                          <li class="list-group-item">
+                                                                <a href="#" onclick="load_login()" class="h6"> Log In </a>
+                                                          </li>      
+                                                   </div>
+                                                 </div>           
+
+                                    <div class="card">
+                                    <div class="card-header" role="tab" id="headingFour">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" small class="text-muted">
+                                                <i class="fa fa-share-alt" aria-hidden="true"></i> Branches
+                                            </a>
+                                        </h6>
+                                    </div>
+                                
+                                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_branches()" class="h6"> Add </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_branches1()" class="h6"> Access </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_branches2()" class="h6"> Manage </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card">                                        
+                                        <div class="card-header" role="tab" id="headingFive">
+                                            <h6 class="mb-0">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"  small class="text-muted">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Inventory
+                                                </a>
+                                            </h6>
+                                        </div>
+                    
+                                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                
+                                                        <div class="list-group-item">
+                                                                <li class="btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                        <a href="#"  onclick="load_inventory0()" class="h6"> Add </a>
+                                                                </li>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                  <a href="#" onclick="load_inventory()" class="h6" ><button class="dropdown-item" type="button">Barcode Scanning</button></a>
+                                                                  <a href="#" onclick="load_inventory1()" class="h6" ><button class="dropdown-item" type="button">Add (No Barcode)</button></a>
+                                                                  <a href="#" onclick="load_inventory2()" class="h6"  ><button class="dropdown-item" type="button">Search + Add</button></a>
+                                                                </div>
+                                                              </div>
+                                                              <li class="list-group-item">
+                                                                    <a href="#" onclick="load_inventory3()" class="h6"> Shelve </a>
+                                                              </li>   
+                                                              
+                                                              <li class="list-group-item">
+                                                                    <a href="#" onclick="load_inventory4()" class="h6"> Modify </a>
+                                                              </li> 
+                                                       </div>
+                                                     </div> 
+            
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingSix">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" small class="text-muted">                                                    
+                                                <i class="fa fa-university" aria-hidden="true"></i> Store
+                                            </a>
+                                        </h6>
+                                    </div>
+                        
+                                    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">                                            
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="#" class="h6"> Add </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" class="h6"> Manage </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" class="h6"> Search </a>                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingSeven">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" small class="text-muted">
+                                                <i class="fa fa-users" aria-hidden="true"></i> Users
+                                            </a>
+                                        </h6>
+                                    </div>
+                                        
+                                    <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_users()" class="h6"> Add </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_users1()" class="h6"> Manage </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                    
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingEight">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" small class="text-muted">
+                                                <i class="fa fa-cog fa-fw" aria-hidden="true"></i> Configuration
+                                            </a>
+                                        </h6>
+                                    </div>
+                            
+                                    <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_config()" class="h6"> Add </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_config1()" class="h6"> Manage </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" onclick="load_config2()" class="h6"> Search </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingNine">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" small class="text-muted">                                                    
+                                                <i class="fa fa-shield" aria-hidden="true"></i> Permissions
+                                            </a>
+                                        </h6>
+                                    </div>   
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 1st Column, 1st row -->
+                    
+                        
+                    <div class="col-lg-9">
+                        <div class="container-fluid">
+
+                            <div id="content" style="margin-top:20px; width:auto; height:auto; overflow-y:hidden; overflow-x:hidden;">
+                                <h6 class="display-3"> Welcome! </h6>
+                                <hr>
+                                <h3> ProNov documentation - a simple, organized, and searchable interface. </h3>
+                                    
+                                <p style="font-size:15px;"> Here is what you should know before you start:</p>
+                                    <ol style="font-size:15px;">
+                                        <li>Navigate the documentation by clicking the side tabs to select what you want.</li>
+                                        <li>You can use the search tab at the top-right to search anything here.</li>
+                                        <li>Please consider supporting the app by sending in you comments and recommendations.</li>
+                                        <li>Thanks and happy using our app.</li>
+                                    </ol>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <!-- End of .col-lg-9 for the content -->
+                
+                </div> 
+                <!-- End of .row -->                            
+            </div>
+            <!-- End of .container-fluid, with ID body-->
+            <div id="footer" style="padding-top:0.2%; padding-bottom:0.1; padding-right:2%; background-color:#E0DCDC; color:#1F3F1F; height:30px;">
+                    <footer style="text-align:center; font-size: 15px; ">
+                        <p class="pull-right"><a href="img/TeamProNov.jpg" width="50%" height="60%" style="color:#1F3F1F">Developed by Team ProNov</a></p>
+                        <p style="color:#1F3F1F">&copy; 2017 ProNov Documentation v1.0 --------- All Right Reserved</p>
+                    </footer>
+                </div>
+                <!-- End of footer -->
+
+        </div>
+        <!-- End of mainBody -->
+        
+            <!-- jQuery first, then Tether, then Bootstrap JS. -->
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </body>
+</html>
