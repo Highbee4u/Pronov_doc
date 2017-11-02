@@ -1,112 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <title>pronov user's guide and Documentation</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
+    <head>
 
-=======
->>>>>>> All Changes with Update
-    <link rel="icon" type="image/png" href="img\ProNov.png">
-    <title> ProNov Documentation </title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
-     
-</head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body>
-<<<<<<< HEAD
-        <div  class="users" id="content" style="margin-bottom:6%">   
-        <h3 class="display-6"> Add Sub-users </h3>
-        <hr>
-        <img src="img/add_user.png"  class="col-sm-3" alt="add_user" width="20%" height="10%">
-        <div id="welcomeMessage" class="col-md-9" style="float:right; padding-left:5%">
-        
-        <p class="lead">
-           This section allows the store owner to add the personnels working for him. It allows the addition of 
-           the primary details of the employees, and the nature of the information to be added goes in this format:
-        </p>
-       <ol>
-        <li>First Name: Tijani (employee's name)</li>
-        <li>Last Name: Giwa (employee's surname)</li>
-        <li>Email Address: example@email.com (employee's valid email address)</li>
-        <li>Phone Number: 07011001100 (employee's valid phone number)</li>
-        <li>User Role: Store Administrator (employee's work in the store)</li>
-        <li>Branch: Edge Pharmacy[Lagos State] (the branch store where employee is working)</li>
-        </ol>                                                                                                                                            
-       </div>    
-       </div>
-      
-       
-       <div class="users" id="manage">
-        <h3 class="display-6"> Manage Users </h3>
-        <hr>
-        <div id="welcomeMessage" class="col-md-9"  style="float:left">
+        <link rel="icon" type="image/png" href="img\pronov.png">
+        <title> ProNOV Documentation </title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+        <script src="js/btnInfo.js"></script>        
+         
+    </head>
 
-        <p class="lead">
-            This section shows the list  of the employees working in all the stores. It allows the store owner to be able to view the number of people working for him.
-            The "+" sign at the right bottom allows sub-users (employees) to be added.
-        </p>                                                                                                                                
-        </div>
-        <img src="img/manage_user.png"  class="col-sm-3" alt="manage_user" width="20%" height="10%">
-
-        </div>
-<!-- </div> -->
-=======
+    <body>
                       
-    <div class="users" id="content" style="margin-bottom: 6%; margin-top: 6%; width: auto; height: auto; overflow-y: hidden; overflow-x:hidden;">
-        <h3 class="display-6"> Add Sub-users </h3>
-        
-        <hr>
-        
-        <img src="img/add_user.png"  class="col-sm-3" alt="add_user" width="20%" height="10%">
-    
-        <div id="welcomeMessage" class="col-md-9" style="float:right; padding-left:5%">
-        
-            <p class="lead">
-              This section allows the store owner to add the personnels working for him. It allows the addition of 
-                the primary details of the employees, and the nature of the information to be added goes in this format:
-            </p>
+        <div class="users" id="add">
 
-            <ol>
-                <li> First Name: FirstName (employee's name) </li>
-                <li> Last Name: LastName (employee's surname) </li>
-                <li> Email Address: example@email.com (employee's valid email address) </li>
-                <li> Phone Number: 0123456789 (employee's valid phone number) </li>
-                <li> User Role: Store Administrator (employee's work in the store) </li>
-                <li> Branch: Branch1 Pharmacy[Lagos State] (the branch store where employee is working) </li>
-            </ol>
+            <div  class="row center-content-sm-center">                            
+                                
+                <div class="col-sm-12">                                                        
+                    <h3> Add Sub-users </h3>
+                    <hr>
+                    
+                    <div class="row center-content-sm-center">
+
+                        <div class = "col-sm-4">
+                            <img src="img/add_user.png" alt="add_user" class="img-thumbnail">                    
+                        </div>
+                    
+                        <div class = "col-sm-8">
+                            <p class="lead">
+                                This Section permits the Store owner to add the personnels working for him. It allows the addition of 
+                                the primary details of the employee(s), and the nature of the information to be added goes in this format:
+                            </p>
+
+                            <ol>
+                                <li> First Name: Jane (employee's name) </li>
+                                <li> Last Name: Doe (employee's surname) </li>
+                                <li> Email Address: janedoe@gmail.com (employee's valid email address) </li>
+                                <li> Phone Number: 081 2345 6789 (employee's valid phone number) </li>
+                                <li> User Role: Store Administrator (employee's position in the Store) </li>
+                                <li> Branch: Branch1 Pharmacy[Lagos State] (the Store branch where employee is working) </li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
         </div>
 
-    </div>
+        <div class="users" id="manage">
 
+            <div  class="row center-content-sm-center">                            
+                                
+                <div class="col-sm-12">                                                        
+                    <h3> Manage Users </h3>
+                    <hr>
 
-    <div class="users" id="manage">
-        <h3 class="display-6"> Manage Users </h3>
-        
-        <hr>
-        
-        <div id="welcomeMessage" class="col-md-9"  style="float:left">
+                    <div class="row center-content-sm-center">
+                                    
+                        <div class = "col-sm-8">
+                            <p class="lead">
+                                This section shows the list  of the employees working in all the stores. It gives the Store owner access to view the number of people working for him.
+                                The "+" sign at the right bottom allows sub-users (employees) to be added.
+                            </p>                                                                                                                                
+                        </div>
+                    
+                        <div class = "col-sm-4">
+                            <img src="img/manage_user.png" alt="manage_user" class="img-thumbnail">                
+                        </div>
+
+                    </div>
+
+                </div>
             
-            <p class="lead">
-                This section shows the list  of the employees working in all the stores. It allows the store owner to be able to view the number of people working for him.
-                The "+" sign at the right bottom allows sub-users (employees) to be added.
-            </p>                                                                                                                                
-            
+            </div>
+
         </div>
-        
-        <img src="img/manage_user.png"  class="col-sm-3" alt="manage_user" width="20%" height="10%">
-        
-    </div>
-    <!-- </div> -->
 
->>>>>>> All Changes with Update
-</body>
+    </body>
 
 </html>
